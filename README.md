@@ -4,7 +4,7 @@ macOS 原生 Clash Verge Rev 桌面控制小组件，支持小号、中号和大
 
 ## 下载状态
 
-首个外发版本为 **0.3.0 Beta 1**。目前在准备异机验收，安装包通过验收后会发布到 [Releases](https://github.com/GungnirRex/verge-card/releases)。尚未公开发布时，该页面不会提供安装包。
+首个外发版本为 **0.3.0 Beta 1（构建 14，自动配置版）**。目前在准备异机验收，安装包通过验收后会发布到 [Releases](https://github.com/GungnirRex/verge-card/releases)。尚未公开发布时，该页面不会提供安装包。
 
 本仓库公开安装包和使用说明，暂不公开源代码。Verge Card 为独立配套工具，不隶属于 Clash Verge Rev 项目，不提供 VPN 服务或订阅。
 
@@ -12,16 +12,16 @@ macOS 原生 Clash Verge Rev 桌面控制小组件，支持小号、中号和大
 
 - Apple 芯片 Mac，macOS 14 或更高版本；此包不支持 Intel Mac 或 iOS。
 - 已安装并启动 Clash Verge Rev，并有可用配置。本工具不包含 Clash 本体或内核。
-- 控制开关需要辅助功能授权及 Clash 中有效、互不冲突的四个快捷键映射。
+- 控制开关需要本人确认辅助功能授权；四个快捷键由 Verge Card 自动配置。
 
 ## 安装
 
 1. 下载 DMG，将 **Verge Card.app** 拖入“应用程序”，从该文件夹首次打开。
 2. 此 Beta 使用 **Apple Development 开发签名，未经 Apple 公证**。若系统阻止打开，先尝试启动一次，再到“系统设置 → 隐私与安全性 → 仍要打开”确认。详情见 [Apple 说明](https://support.apple.com/102445)。无需关闭 Gatekeeper 或 SIP；受管理的 Mac 可能不允许此操作。
-3. 按首次配置页检查 Clash 目录、选择规则模式主节点组，并完成辅助功能及快捷键设置。已有有效热键会自动沿用，不修改 Clash 配置。
+3. 按首次配置页检查 Clash 目录、选择规则模式主节点组，并在系统辅助功能中允许 Verge Card。返回后程序自动沿用有效热键，补齐缺失或冲突项并保存；无需逐项录入组合键。首次配置会短暂打开 Clash 热键设置，不切换代理、TUN、模式或节点。
 4. 在桌面空白处右键 → 编辑小组件 → 搜索 **Verge Card**，添加任一尺寸。
 
-安装使用无须 Xcode 或 Apple 开发者账号。系统权限和 Clash 快捷键仍需在每台电脑上分别配置。
+安装使用无须 Xcode 或 Apple 开发者账号。每台电脑的系统授权仍须本人确认，应用无法自动授予权限。自动配置当前按 Clash Verge Rev 的中文或英文热键界面适配；无法识别界面时停止并提供重试提示。
 
 ## 功能与刷新
 
